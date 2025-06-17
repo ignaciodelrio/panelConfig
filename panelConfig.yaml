@@ -1,49 +1,42 @@
-# panelConfig.yaml
-
-# Como tus IDs ya vienen sin prefijo "cell-", lo desactivamos
-cellIdPreamble: ""
-
+cellIdPreamble: ""    # ya incluimos el id completo en el SVG: node-1, node-2…
 cells:
-  "1rbM0-cvAGEcR-0-JKkf-1":   # nodo1
-    query: A
-    expression: ${__value.raw}
-    thresholds:
-      - op: "="
-        value: 0
-        color: "red"
-      - op: ">"
-        value: 0
-        color: "green"
-
-  "1rbM0-cvAGEcR-0-JKkf-2":   # nodo2
-    query: B
-    expression: ${__value.raw}
-    thresholds:
-      - op: "="
-        value: 0
-        color: "red"
-      - op: ">"
-        value: 0
-        color: "green"
-
-  "1rbM0-cvAGEcR-0-JKkf-3":   # nodo3
-    query: C
-    expression: ${__value.raw}
-    thresholds:
-      - op: "="
-        value: 0
-        color: "red"
-      - op: ">"
-        value: 0
-        color: "green"
-
-  "1rbM0-cvAGEcR-0-JKkf-4":   # nodo4
-    query: D
-    expression: ${__value.raw}
-    thresholds:
-      - op: "="
-        value: 0
-        color: "red"
-      - op: ">"
-        value: 0
-        color: "green"
+  node-1:
+    dataRef: "A"
+    label:
+      units: "none"
+      decimalPoints: 0
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - { color: "red",   level: 0 }
+        - { color: "green", level: 1 }
+  node-2:
+    dataRef: "B"
+    label:
+      units: "none"
+      decimalPoints: 0
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - { color: "red",   level: 0 }
+        - { color: "green", level: 1 }
+  node-3:
+    dataRef: "C"
+    label:
+      units: "none"
+      decimalPoints: 0
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - { color: "red",   level: 0 }
+        - { color: "green", level: 1 }
+  node-4:
+    dataRef: "D"
+    label:
+      units: "none"
+      decimalPoints: 0
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - { color: "red",   level: 0 }
+        - { color: "green", level: 1 }
