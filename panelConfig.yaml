@@ -1,34 +1,38 @@
-cellIdPreamble: "cell-"        # ← ya coincide con los id="cell-node-X" del SVG
+cellIdPreamble: "cell-"
 
 cells:
   node-1:
-    dataRef: "a"
+    dataRef: "a"          # alias de tu query
+    reducer: last         # ← ESTA línea hace el trabajo
     fillColor:
-      gradientMode: "hue"      # usa solo los colores listados; no interpola
+      gradientMode: hue
       thresholds:
-        - { color: "red",   level: 0 }
-        - { color: "green", level: 1 }
+        - { color: red,   level: 0 }
+        - { color: green, level: 1 }
 
   node-2:
     dataRef: "b"
+    reducer: last
     fillColor:
-      gradientMode: "hue"
+      gradientMode: hue
       thresholds:
-        - { color: "red",   level: 0 }
-        - { color: "green", level: 1 }
+        - { color: red,   level: 0 }
+        - { color: green, level: 1 }
 
   node-3:
     dataRef: "c"
+    reducer: last
     fillColor:
-      gradientMode: "hue"
+      gradientMode: hue
       thresholds:
-        - { color: "red",   level: 0 }
-        - { color: "green", level: 1 }
+        - { color: red,   level: 0 }
+        - { color: green, level: 1 }
 
   node-4:
     dataRef: "d"
+    reducer: last
     fillColor:
-      gradientMode: "hue"
+      gradientMode: hue
       thresholds:
-        - { color: "red",   level: 0 }
-        - { color: "green", level: 1 }
+        - { color: red,   level: 0 }
+        - { color: green, level: 1 }
