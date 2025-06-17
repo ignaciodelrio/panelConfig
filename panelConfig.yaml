@@ -1,0 +1,49 @@
+# panelConfig.yaml
+# Evita añadir "cell-" al empezar el ID (tu SVG no lo usa)
+cellIdPreamble: ""
+
+# Sólo defines las celdas que necesitas
+cells:
+  "1rbM0-cvAGEcR-0-JKkf-1":
+    query: A
+    expression: ${__value.raw}
+    thresholds:
+      - op: "="
+        value: 0
+        color: "red"
+      - op: ">"
+        value: 0
+        color: "green"
+
+  "1rbM0-cvAGEcR-0-JKkf-2":
+    query: B
+    expression: ${__value.raw}
+    thresholds:
+      - op: "="
+        value: 0
+        color: "red"
+      - op: ">"
+        value: 0
+        color: "green"
+
+  "1rbM0-cvAGEcR-0-JKkf-3":
+    query: C
+    expression: ${__value.raw}
+    thresholds:
+      - op: "="
+        value: 0
+        color: "red"
+      - op: ">"
+        value: 0
+        color: "green"
+
+  "1rbM0-cvAGEcR-0-JKkf-4":
+    query: D
+    expression: ${__value.raw}
+    thresholds:
+      - op: "="
+        value: 0
+        color: "red"
+      - op: ">"
+        value: 0
+        color: "green"
