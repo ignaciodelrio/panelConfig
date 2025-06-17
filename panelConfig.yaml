@@ -2,7 +2,7 @@ cellIdPreamble: "cell-"
 
 cells:
   node-1:
-    dataRef: "a"          # alias de tu query
+    dataRef: "A"          # alias de tu query
     reducer: last         # ← ESTA línea hace el trabajo
     fillColor:
       gradientMode: hue
@@ -11,7 +11,7 @@ cells:
         - { color: green, level: 1 }
 
   node-2:
-    dataRef: "b"
+    dataRef: "B"
     reducer: last
     fillColor:
       gradientMode: hue
@@ -20,7 +20,7 @@ cells:
         - { color: green, level: 1 }
 
   node-3:
-    dataRef: "c"
+    dataRef: "C"
     reducer: last
     fillColor:
       gradientMode: hue
@@ -29,7 +29,7 @@ cells:
         - { color: green, level: 1 }
 
   node-4:
-    dataRef: "d"
+    dataRef: "D"
     reducer: last
     fillColor:
       gradientMode: hue
