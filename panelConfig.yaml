@@ -2,8 +2,8 @@ cellIdPreamble: "cell-"
 
 cells:
   node-1:
-    dataRef: "A"          # alias de tu query
-    reducer: last         # ← ESTA línea hace el trabajo
+    dataRef: "A"          
+    reducer: last         
     fillColor:
       gradientMode: hue
       thresholds:
